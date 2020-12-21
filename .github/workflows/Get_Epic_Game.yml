@@ -65,12 +65,12 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
 
       # 如果需要推送到 Telegram 用来提示，取消注释以下内容
-      # 这部分的内容可以查看 https://www.github.com/appleboy/telegram-action
-       - name: Send Gift Info
-         if: always()
-         uses: appleboy/telegram-action@master
-         with:
-           to: ${{ secrets.TELEGRAM_TO }}
-           token: ${{ secrets.TELEGRAM_TOKEN }}
-           format: markdown
-           message_file: workdir/games.info
+      ## 这部分的内容可以查看 https://www.github.com/appleboy/telegram-action
+      # - name: Send Gift Info
+      #   if: always()
+      #   uses: appleboy/telegram-action@master
+      #   with:
+      #     to: ${{ secrets.TELEGRAM_TO }}
+      #     token: ${{ secrets.TELEGRAM_TOKEN }}
+      #     format: markdown
+      #     message_file: workdir/games.info
